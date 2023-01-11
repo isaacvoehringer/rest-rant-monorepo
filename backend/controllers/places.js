@@ -1,5 +1,6 @@
 const router = require('express').Router()
 const db = require("../models")
+console.log(router, 'router')
 
 const { Place, Comment, User } = db
 
