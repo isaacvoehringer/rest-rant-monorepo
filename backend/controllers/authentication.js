@@ -36,5 +36,4 @@ router.get('/profile', async (req, res) => {
         res.json(null)
     }
 })
-
-module.exports = router
+>>>>>>>>> Temporary merge branch 2
