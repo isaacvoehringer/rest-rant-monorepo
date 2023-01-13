@@ -5,7 +5,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const app = express();
 const cookieSession = require("cookie-session");
-console.log(app)
+// console.log(app)
 // Express Settings
 app.use(
   cookieSession({
