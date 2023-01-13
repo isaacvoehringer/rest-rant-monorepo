@@ -2,7 +2,7 @@
 require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
-const cors = require("cors");
+const cors = require("cors");;
 const app = express();
 const cookieSession = require("cookie-session");
 // console.log(app)
@@ -27,9 +27,9 @@ app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: true }));
 
 
-app.use("/users", require("./controllers/users"));
-app.use("/places", require("./controllers/places"));
-app.use("/authentication", require("./controllers/authenticaton"));
+app.use('/places', require('./controllers/places'))
+app.use('/users', require('./controllers/users'))
+app.use('/authentication', require('./controllers/authentication'))
 
 // Listen for Connections
 app.listen(process.env.PORT, () => {
